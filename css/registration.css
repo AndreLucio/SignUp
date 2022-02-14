@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito sans', sans-serif;
+}
+body {
+  display:flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #E5E5E5;
+}
+.container {
+  max-width: 650px;
+  width: 100%;
+  height: 763px;
+  color: #767676;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 50px;
+}
+#data {
+  height: auto;
+  width: 50%;
+  padding: 0 5%;
+  margin: 0 25%;
+  align-items: center;
+ }
+
+.container .title {
+  font-size: 37px;
+  font-weight: 600;
+  font-family: 'inter sans', sans-serif;
+  color: #111111;
+  text-align: center;
+}
+
+.container form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 70%;
+  padding-top: 10px;
+ }
+
+.container form .user-details {
+ flex-flow: row wrap;
+}
+
+form .user-details .input-box {
+  margin-bottom: 5%;
+  width: calc(100% - 20px);
+  flex-flow: row wrap;
+}
+
+.user-details .input-box .details, .user-details .input-box label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+  height: 40px;
+  border: 2px solid #AAAAAA;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+}
+
+#fullName{
+  width: 100%;
+}
+
+#email {
+  width: 64%;
+}
+#phone {
+  width: 35%;
+}
+
+#pass {
+  width: 64%;
+}
+
+#b-day {
+  width: 35%;
+  margin-bottom: 5%;
+}
+
+.user-check {
+  margin-top: 10%;
+  color: #000;
+}
+
+#acceptance {
+  height: 21px;
+  width: 21px;
+}
+
+form .button, #register {
+  align-content: flex-end;
+  margin-top: 10%;
+}
+
+#register {
+  height: 40px;
+  margin: 0 20px;
+  padding: 0 12px;
+  border-radius: 10px;
+  background-color: #0DBDBD;
+  color: #fff;
+  border-color: #0DBDBD;
+}
+
+span {
+  color: red;
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 100vh;
+    height: 100vh;
+  }
+}
+
+.ui-datepicker-calendar {
+  display: none;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Internship Registration - Compass UOL</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/test.css" />
+    <script defer src="js/test.js"></script>
+  </head>
+  <body>
+    <main class="container">
+
+      <div class="header" id="logo">
+        <img id="data" src="img/data.png">
+      </div>
+      <h1 class="title">Intern Sign Up</h1>
+
+      <form class="form" id="form" method="POST" action="sucess.html" >
+
+        <div class="form-control" id="form-name">
+          <label for="name"><small>Full Name *</small></label>
+          <input type="text" id="fullname" placeholder=" Name" >
+          <span class="error">Fullname Invalid</span>
+        </div>
+
+        <div class="form-control" id="form-email">
+          <label for="mail"><small>Email *</small></label>
+          <input type="email" id="email" placeholder=" foo@bar.com" >
+          <span class="error"></span>
+        </div>
+
+        <div class="form-control" id="form-phone">
+          <label for="tel"><small>Phone</small></label>
+          <input type="tel" id="phone" placeholder=" (83) 00000-0000" >
+          <span class="error"></span>
+        </div>
+
+        <div class="form-control" id="form-pass">
+          <label for="password"><small>Password *</small></label>
+          <input type="password" id="password">
+          <span class="error"></span>
+        </div>
+
+        <div class="form-control" id="form-bday">
+          <label for="date"><small>Birthday *</small></label>
+          <input type="date" id="birthday">
+          <span class="error"></span>
+        </div>
+
+        <div class="form-control" id="form-check">
+          <input type="checkbox" id="checkb" value="true" required> I accept the terms and Privacy
+          <span class="error">You must accept the terms</span>
+        </div>
+
+        <div class="form-control" id="user-register">
+          <button class="register" type="submit" value="Register">Register</button>
+        </div>
+  
+      </form>
+    </main>
+  </body>
+</html>

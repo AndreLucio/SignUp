@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito sans', sans-serif;
+}
+body {
+  display:flex;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #E5E5E5;
+}
+.container {
+  max-width: 650px;
+  width: 100%;
+  height: 763px;
+  color: #767676;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 50px;
+}
+#data {
+  height: auto;
+  width: 50%;
+  padding: 0 5%;
+  margin: 0 25%;
+  align-items: center;
+ }
+.container .title {
+  height: 42px;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'inter sans', sans-serif;
+  color: #111111;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.container form, .container .sucess {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  height: 75%;
+  padding-top: 10px;
+ }
+
+.container form .user-details {
+ flex-flow: row wrap;
+}
+
+form .user-details .input-box, form .form-control {
+  width: calc(100% - 20px);
+  flex-flow: row wrap;
+}
+
+.user-details .input-box label, form .form-control label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input, form .form-control input{
+  height: 40px;
+  border: 2px solid #AAAAAA;
+  border-radius: 4px;
+  width: 100%;
+  outline: none;
+}
+
+.user-details span, form .form-control span {
+  visibility:hidden;
+  color: red;
+}
+
+
+
+
+#fullName{
+  order: -3;
+  width: 100%;
+}
+
+#email {
+  order: -2;
+  width: 64%;
+}
+
+#phone {
+  order: -1;
+  width: 35%;
+}
+
+#pass {
+  order: 0;
+  width: 64%;
+}
+
+#b-day {
+  order: 1;
+  width: 35%;
+  margin-bottom: 5%;
+}
+
+.user-check, #checkme {
+  order: 2;
+  margin-top: 10%;
+  color: #111111;
+  font-weight: 400;
+}
+
+#acceptance {
+  height: 21px;
+  width: 21px;
+  display: inline-block;
+
+}
+#acceptance:checked {
+  background-color: #0DBDBD;
+
+}
+
+.user-register, .sucess, form .button, #user-register {
+  order: 3;
+  align-content: flex-end;
+  margin-top: 10%;
+}
+
+.register, .goBack, .button {
+  -moz-appearance: unset;
+  -webkit-appearance: unset;
+  box-shadow: unset;
+  height: 40px;
+  width: 81px;
+  margin: 0 20px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #0DBDBD;
+  border-color: #0DBDBD;
+}
+
+
+@media (width: 451px) {
+  .container {
+    width: 100vh;
+    height: 100vh;
+  }
+}
+
+.ui-date-calendar {
+  display: none;
+}
